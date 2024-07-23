@@ -5,9 +5,12 @@ import java.util.Scanner;
 public class Homework1 {
     public static void main(String[] args) {
 
-        System.out.println ("Для начала работы введите номер задания которое хотите посмотреть:\n1 - greetings\n2 - checkSign\n3 - selectColor\n4 - compareNumbers\n5 - addOrSubtractAndPrint\n6 - лучшая в мире микропиздочнаяигра");
         Scanner scanner = new Scanner(System.in);
-        int a = scanner.nextInt();
+
+        while (true) {
+            System.out.println ("Для начала работы введите номер задания которое хотите посмотреть:\n1 - greetings\n2 - checkSign\n3 - selectColor\n4 - compareNumbers\n5 - addOrSubtractAndPrint\n6 - лучшая в мире микропиздочнаяигра");
+
+            int a = scanner.nextInt();
 
         if (a >= 1  &&  a <= 6) {
             if (a == 1) {
@@ -30,6 +33,7 @@ public class Homework1 {
             }
         } else {
             System.out.println("Тебе сказали по русски че ввести, не выебывайся давай");
+        }
         }
 
 
