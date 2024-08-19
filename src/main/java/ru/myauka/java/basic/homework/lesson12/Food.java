@@ -2,21 +2,25 @@ package ru.myauka.java.basic.homework.lesson12;
 
 public class Food {
 
-   private int amountFood;
+    private int amountOfFood;
 
-   public Food(int amount) {
-      this.amountFood = amount;
-   }
+    public Food(int amountOfFood) {
+        this.amountOfFood = amountOfFood;
+    }
 
-   public void setAmountFood(int amountFood) {
-      this.amountFood = amountFood;
-   }
+    public void setAmountOfFood(int amountOfFood) {
+        this.amountOfFood = amountOfFood;
+    }
 
-   public int putFood() {
-      return amountFood;
-   }
+    public int getAmountOfFood() {
+        if (amountOfFood <= 0) {
+            System.out.println("В пакете закончилась еда");
+            return 0;
+        }
+        return amountOfFood;
+    }
 
-   public void info() {
-      System.out.println("\nКоличество еды в пакете " + amountFood);
-   }
+    public void info() {
+        System.out.println("\nКоличество еды в пакете " + amountOfFood);
+    }
 }

@@ -1,7 +1,5 @@
 package ru.myauka.java.basic.homework.lesson12;
 
-import ru.myauka.java.basic.homework.lesson9.Box;
-
 import java.util.Scanner;
 
 public class Main {
@@ -147,9 +145,7 @@ public class Main {
                 default:
                     System.out.println("Введены некорректные данные, внимательнее ");
                     break;
-
             }
         }
     }
 }
-

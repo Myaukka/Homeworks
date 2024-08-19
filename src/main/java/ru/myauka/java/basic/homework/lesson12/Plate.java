@@ -2,7 +2,7 @@ package ru.myauka.java.basic.homework.lesson12;
 
 public class Plate {
 
-    private int maxAmount;
+    private final int maxAmount;
     private int currAmount;
 
     public Plate(int maxAmount) {
@@ -16,14 +16,13 @@ public class Plate {
                 "\nТекущее количество еды в тарелке: " + currAmount);
     }
 
-    public int addFood(Food food) {
-        if(currAmount < maxAmount) {
-            food.setAmountFood(food.putFood() - (maxAmount - currAmount));
-            while (currAmount < maxAmount) {
-                currAmount ++;
-            }
-        }return currAmount;
+    public void addFood(Food food) {
+        while (currAmount < maxAmount && food.getAmountOfFood() > 0) {
+            food.setAmountOfFood(food.getAmountOfFood() - 1);
+            currAmount++;
+        }
     }
+
     public int getFood() {
         return currAmount;
     }
