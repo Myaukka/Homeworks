@@ -90,7 +90,7 @@ public class Main {
 
         for (Transport transport : transports) {
             human1.setCurrentTransport(transport);
-            for (Terrain terrain : Terrain.values()){
+            for (Terrain terrain : Terrain.values()) {
                 human1.setTerrain(terrain);
                 human1.move(20, human1);
             }
